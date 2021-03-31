@@ -27,7 +27,7 @@ f.write('''
    ░   ░ ░  ▒ ░  ░        ░░   ░ ░ ░ ░ ▒      ░ ░     ░   ▒     ░░   ░ ░      ░      ░     ░░   ░ 
          ░  ░              ░         ░ ░                  ░  ░   ░            ░      ░  ░   ░     
 
-Nitro Farmer made by "Misspoken.\n
+Nitro Farmer modified by "Misspoken.\n
 Warning\nThis tool is against Discord ToS, by using this tool your account could be banned. 
 I don't take responsibility for your actions.
 
@@ -68,7 +68,7 @@ if "Boost" in nitro:
       f2.write(f'[+] Valid Boost Code > https://discord.gift/{codeboost}\n')
       f2.close()
     else:
-      print(Fore.RED + '[-] Invalid Nitro Code >' + Style.RESET_ALL + f' https://discord.gift/{codeboost}')
+      print(Fore.RED + '[-] Invalid >' + Style.RESET_ALL + f' https://discord.gift/{codeboost}')
 
 print(Style.RESET_ALL)
 if "Classic" in nitro:
@@ -76,9 +76,9 @@ if "Classic" in nitro:
     codeclassic = ''.join(random.choices(string.ascii_letters + string.digits, k=16))
     r = requests.get(f'https://discordapp.com/api/v8/entitlements/gift-codes/{codeclassic}?with_application=false&with_subscription_plan=true')
     if r.status_code == 200:
-      print(Fore.GREEN + f'[+] Valid Nitro Code >' + Style.RESET_ALL + f' https://discord.gift/{codeclassic}')
+      print(Fore.GREEN + f'[+] Valid >' + Style.RESET_ALL + f' https://discord.gift/{codeclassic}')
       f1 = open('HitsClassic.txt', 'a+')
-      f1.write(f'[+] Valid Classic Code > https://discord.gift/{codeclassic}\n')
+      f1.write(f'[+] Valid > https://discord.gift/{codeclassic}\n')
       f1.close()
     else:
-      print(Fore.RED + '[-] Invalid Nitro Code >' + Style.RESET_ALL + f' https://discord.gift/{codeclassic}')
+      print(Fore.RED + '[-] Invalid >' + Style.RESET_ALL + f' https://discord.gift/{codeclassic}')
